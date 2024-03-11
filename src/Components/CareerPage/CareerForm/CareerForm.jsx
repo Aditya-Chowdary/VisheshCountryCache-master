@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./CareerForm.css"; // Assuming you have your CSS file for styling
 import image from "../../../assets/formImage.png";
 import { Row, Col, Container } from "react-bootstrap";
+import attachIcon from "../../../assets/CareerPage/attach-square.png";
 
 const CareerForm = () => {
   const [formData, setFormData] = useState({
@@ -122,7 +123,9 @@ const CareerForm = () => {
                 className="file"
                 onChange={handleChange}
               />
-              <span className="file-icon">📄</span>
+              <span className="file-icon">
+                <img src={attachIcon} />
+              </span>
             </div>
             <button type="submit" className="career-submit-btn">
               Submit

@@ -24,13 +24,13 @@ function Career() {
     vertical: true, // Set to true for vertical scrolling
   };
   return (
-    <div >
+    <div>
       <div className="career_banner"></div>
       <div style={{ marginTop: "10%", margin: "2%" }}>
         <Row>
           <Col>
-            <p className="smallText" style={{ whiteSpace: "nowrap" }}>
-              A great place to
+            <p className="smallText">
+              A great place to{" "}
               <Slider {...settings} className="slider_style">
                 <div>
                   <span>Work</span>
@@ -53,7 +53,7 @@ function Career() {
           </Col>
           <Col>
             <Row>
-              <Col style={{padding:'40px'}}>
+              <Col style={{ padding: "40px" }}>
                 <p className="smallText" style={{ textAlign: "center" }}>
                   <Image src={icon1} />
                   <br />
@@ -62,7 +62,7 @@ function Career() {
                   Excellence
                 </p>
               </Col>
-              <Col style={{padding:'40px'}}>
+              <Col style={{ padding: "40px" }}>
                 <p className="smallText" style={{ textAlign: "center" }}>
                   <Image src={icon2} />
                   <br />
@@ -72,7 +72,7 @@ function Career() {
               </Col>
             </Row>
             <Row>
-              <Col style={{padding:'40px'}}>
+              <Col style={{ padding: "40px" }}>
                 <p className="smallText" style={{ textAlign: "center" }}>
                   <Image src={icon3} />
                   <br />
@@ -80,7 +80,7 @@ function Career() {
                   Creativity
                 </p>
               </Col>
-              <Col style={{padding:'40px'}}>
+              <Col style={{ padding: "40px" }}>
                 <p className="smallText" style={{ textAlign: "center" }}>
                   <Image src={icon4} />
                   <br />
@@ -104,7 +104,7 @@ function Career() {
               your creative thinking and innovation will be valued.
             </p>
           </Col>
-          <hr/>
+          <hr />
         </Row>
         <Row>
           <Col>
@@ -168,10 +168,10 @@ function Career() {
           <hr />
         </Row>
       </div>
-      <div style={{ marginTop: "10%"}}>
+      <div style={{ marginTop: "10%" }}>
         <CareerAccordion />
       </div>
-      <div style={{ marginTop: "8%", marginLeft: "2%",marginBottom:'10%' }}>
+      <div style={{ marginTop: "8%", marginLeft: "2%", marginBottom: "10%" }}>
         <CareerForm />
       </div>
     </div>

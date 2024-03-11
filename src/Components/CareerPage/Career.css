@@ -58,11 +58,14 @@
   font-weight: 400;
   line-height: 140%; /* 47.6px */
 }
+.slick-prev:before {
+  content: none !important;
+}
 .slider_style {
-  display: "inline-block" !important;
-  vertical-align: "middle" !important;
-  width: "30%";
-  margin-top: "-0.6%";
+  display: inline-block !important;
+  vertical-align: middle !important;
+  width: 30%; /* Adjust as needed */
+  margin-top: -0.6%; /* Adjust as needed */
 }
 /* Responsive Text Size */
 @media (max-width: 768px) {
@@ -78,7 +81,7 @@
   .normalText {
     font-size: x-large;
   }
-  .accordion-button{
+  .accordion-button {
     font-size: large;
   }
   .slider_styles {
