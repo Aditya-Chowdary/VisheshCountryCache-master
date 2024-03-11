@@ -1,0 +1,82 @@
+@font-face {
+  font-family: Satoshi;
+  src: url(../../../public/Satoshi-Regular.otf);
+}
+@font-face {
+    font-family: Satoshi-med;
+    src: url(../../../public/Satoshi-Medium.otf);
+  }
+.privacy-container {
+  margin-top: 2%;
+  margin-left: 2%;
+}
+.PrivacyPage-Header-Name {
+  color: var(--text-icon-light-heading, #131a27);
+  text-align: center;
+  /* Headings/H4/Medium */
+  font-family: Satoshi-med;
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 81.6px */
+  margin-bottom: 4%;
+}
+.privacy-subHeading {
+  color: var(--text-icon-light-heading, #131a27);
+  /* Headings/H6/Medium */
+  font-family: Satoshi-med;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 47.6px */
+}
+.privacy-subHeading2 {
+  color: var(--text-icon-light-heading, #131a27);
+
+  /* Body/Text/Medium */
+  font-family: Satoshi-med;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 36px */
+  letter-spacing: 0.24px;
+}
+.privacy-subText {
+  color: var(--text-icon-light-body, #33353a);
+  max-width: 1790px;
+  /* Body/Text/Regular */
+  font-family: Satoshi;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 36px */
+  letter-spacing: 0.24px;
+}
+.privacy-email {
+  color: var(--Primary-500, #f5a091);
+
+  /* Body/Text/Regular */
+  font-family: Satoshi;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.24px;
+}
+@media (max-width: 768px) {
+  .PrivacyPage-Header-Name {
+    font-size: 29px;
+  }
+  .privacy-subHeading {
+    font-size: 22px;
+  }
+  .privacy-subHeading2 {
+    font-size: 16px;
+  }
+  .privacy-subText {
+    font-size: 16px;
+  }
+  .privacy-email {
+    font-size: 16px;
+  }
+}

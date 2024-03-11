@@ -1,0 +1,63 @@
+.accordion .accordion-item {
+  padding: 0;
+  border-bottom: 1px solid var(--Grey-400, #98a2b3);
+  background: var(--BgColors-Three, #f7f5f2);
+}
+
+.accordion {
+  background: none;
+  max-width: 1792px !important;
+}
+
+.accordion-button {
+  color: var(--text-icon-light-body, #33353a);
+  /* Headings/H6/Medium */
+  font-family: Satoshi-med;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 47.6px */
+}
+
+.accordion-item:hover {
+  background-color: white !important;
+}
+
+.accordion-heading {
+  color: var(--Base-Black, #000);
+  /* Body/Text/Medium */
+  font-family: Satoshi-med;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 36px */
+  letter-spacing: 0.24px;
+}
+
+.accordion-para {
+  color: var(--text-icon-light-body, #33353a);
+  /* Body/TextS/Regular */
+  font-family: Satoshi;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+  letter-spacing: 0.2px;
+  max-width: 1609px;
+}
+
+/* Responsive Text Size */
+@media (max-width: 768px) {
+  .accordion-button {
+    font-size: 28px;
+  }
+
+  .accordion-heading {
+    font-size: 20px;
+  }
+
+  .accordion-para {
+    font-size: 16px;
+  }
+
+}

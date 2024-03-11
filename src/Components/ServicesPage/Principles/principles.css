@@ -1,0 +1,196 @@
+@font-face {
+    font-family: Satoshi-light;
+    src: url(../../../../public/Satoshi-Light.otf);
+  }
+  
+  @font-face {
+    font-family: Satoshi;
+    src: url(../../../../public/Satoshi-Regular.otf);
+  }
+  
+  @font-face {
+    font-family: Satoshi-med;
+    src: url(../../../../public/Satoshi-Medium.otf);
+  }
+  
+
+.principlesp-container {
+    padding: 0% 3.2%;
+    max-width: 100%; /* Set the maximum width of the container */
+    margin: 0 auto; /* Center the container */
+}
+
+.principles-Col-1 {
+    /* padding: 0px 10px !important; */
+   width: 33%;
+   border: 0px solid;
+}
+.principles-Col-2 {
+    /* padding: 0px 10px !important; */
+   width: 33%;
+   border: 0px solid;
+   padding-left: 5%;
+}
+.principles-Col-3 {
+    /* padding: 0px 10px !important; */
+   width: 33%;
+   border: 0px solid;
+   padding-left: 6%;
+}
+
+.principles-Row {
+    /* margin-top: 4rem; */
+
+    justify-content: space-between;
+    
+}
+
+.principles {
+    color: var(--text-icon-light-heading, #131A27);
+    text-align: center;
+    /* Headings/H3/Medium */
+    font-family: Satoshi-med;
+    font-size: 5vw; /* Responsive font size */
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 115.2px */
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+
+.icon {
+    width: 6vw; /* Responsive width */
+    height: 6vw; /* Responsive height */
+    flex-shrink: 0;
+}
+
+.heading-principals {
+    color: var(--text-icon-light-heading, #131A27);
+    /* Headings/H5/Medium */
+    font-family: Satoshi-med;
+    font-size: 2.5vw; /* Responsive font size */
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 57.6px */
+    max-width: 30vw; /* Responsive maximum width */
+}
+
+.sub_text_principals {
+    /* color: var(--text-icon-light-body, #33353A);
+    max-width: 27vw; Responsive maximum width */
+    /* Body/Text/Regular */
+    /* font-family: Satoshi;
+    font-size:  1.25vw; /* Responsive font size */
+    /* font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    /* letter-spacing: 0.24px;
+    text-align: justify; */ 
+    /* word-break: break-all; */
+    /* width: 90%; */
+
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    /* .heading-principals,
+    .sub_text_principals {
+        font-size: 4vw; Adjust font size for smaller screens
+        max-width: 90%; Adjust maximum width for smaller screens
+    } */
+
+    /* .principles {
+        /* font-size: 8vw; Adjust font size for smaller screens
+    } */
+    .principles-Row{
+        margin-top: 2%;
+    }
+    .principles-Col-1 {
+        /* padding: 0px 10px !important; */
+       width: 100%;
+       border: 0px solid;
+       padding-left: 2%;
+       text-align: center;
+    }
+    .principles-Col-2 {
+        /* padding: 0px 10px !important; */
+        width: 100%;
+       border: 0px solid;
+       padding-left: 2%;
+       text-align: center
+    }
+    .principles-Col-3 {
+        /* padding: 0px 10px !important; */
+        width: 100%;
+       border: 0px solid;
+       padding-left: 2%;
+       text-align: center
+    }
+    .heading-principals,
+    .sub_text_principals {
+        font-size: 5vw; /* Further adjust font size for smaller screens */
+        text-align: center;
+    }
+    .principles-Row{
+        justify-content: center;
+
+        text-align: center;
+    }
+    .icon {
+        width: 20vw; /* Responsive width */
+        height: 20vw; /* Responsive height */
+        flex-shrink: 0;
+    }
+    .heading-principals{
+        max-width: 100%;
+    }
+    .sub_text_principals{
+        padding: 0% 10%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .heading-principals,
+    .sub_text_principals {
+        font-size: 5vw; /* Further adjust font size for smaller screens */
+    }
+    .sub_text_principals {
+        width: 100%;
+        max-width: 100%;
+    }
+    .heading-principals{
+        max-width: 100%;
+    }
+    .principles {
+       font-size: 10vw;/* Further adjust font size for smaller screens */
+    }
+    .principles-Row{
+        justify-content: center;
+    }
+    .principles-Col-1 {
+        /* padding: 0px 10px !important; */
+       width: 100%;
+       border: 0px solid;
+       padding-left: 2%;
+       text-align: center;
+    }
+    .principles-Col-2 {
+        /* padding: 0px 10px !important; */
+       width: 100%;
+       border: 0px solid;
+       padding-left: 2%;
+       text-align: center
+    }
+    .principles-Col-3 {
+        /* padding: 0px 10px !important; */
+       width: 100%;
+       border: 0px solid;
+       padding-left: 2%;
+       text-align: center
+    }
+    .icon {
+        width: 20vw; /* Responsive width */
+        height: 20vw; /* Responsive height */
+        flex-shrink: 0;
+    }
+}

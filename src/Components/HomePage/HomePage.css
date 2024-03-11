@@ -1,0 +1,211 @@
+@font-face {
+    font-family: Satoshi;
+    src: url(../../../public/Satoshi-Regular.otf);
+}
+
+@font-face {
+    font-family: Satoshi-medium;
+    src: url(../../../public/Satoshi-Medium.otf);
+}
+
+.video4 {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video1 {
+    width: 99.5%;
+    height: 86vh;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 0% 0.2%;
+}
+
+/* Optionally, you can hide controls */
+.video1::-webkit-media-controls,
+.video4::-webkit-media-controls,
+.video1::-webkit-media-controls-enclosure,
+.video4::-webkit-media-controls-enclosure,
+.video1::-webkit-media-controls-panel,
+.video4::-webkit-media-controls-panel {
+    display: none;
+}
+
+/**       heading  Scrolling         */
+.scroll-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    margin: 15rem 0px 0rem;
+}
+
+.scroll-text {
+    display: flex;
+    animation: scroll1 60s linear infinite;
+    width: 500%;
+}
+
+@keyframes scroll1 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.vishesh-scroll-heading {
+    color: #444444;
+    font-family: Satoshi-medium;
+    font-size: calc(4rem + 6vw);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    margin: 0;
+}
+
+.heading-scroll-img {
+    width: 8rem;
+    margin-top: -3rem;
+}
+
+.team-scroll-heading {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 40px;
+    font-size: 68px;
+    flex-shrink: 0;
+    margin: 0px;
+}
+
+.heading-scroll-img1 {
+    width: 3rem;
+    margin-top: 2vh;
+    opacity: 90%;
+}
+
+.scroll-container1 {
+    width: 92%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    margin: 2rem 4rem;
+}
+
+.scroll-text2 {
+    display: flex;
+    animation: scroll2 60s linear infinite;
+    width: 500%;
+}
+
+
+@keyframes scroll2 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.team-heading-sections1 {
+    margin: 15rem 0rem 0rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .video-container4 {
+        width: 238px;
+        height: 100px;
+    }
+    .video1 {
+        width: 99%;
+        margin: 0% 0.8%;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .scroll-container {
+        margin: 8rem 0px;
+    }
+
+    .scroll-container1 {
+        width: 86%;
+    }
+
+    .team-heading-sections1 {
+        margin: 10rem 0rem 0rem;
+    }
+
+    .video1 {
+        height: 55vh;
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    .video-container4 {
+        width: 200px;
+        height: 80px;
+    }
+
+    .scroll-container {
+        margin: 6rem 0px;
+    }
+
+    .heading-scroll-img {
+        width: 3.8rem;
+        margin-top: -25px;
+    }
+
+    .team-heading-sections1 {
+        margin: 8rem 0rem 0rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .video-container4 {
+        width: 200px;
+        height: 80px;
+    }
+    .video1 {
+        height: 35vh;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .vishesh-scroll-heading {
+        font-size: calc(2rem + 2vw);
+        margin: 0px;
+    }
+
+    .heading-scroll-img {
+        width: 1.6rem;
+        margin-top: -0.8vh;
+    }
+
+    .scroll-container1 {
+        width: 90%;
+        margin: 2rem 1rem;
+    }
+
+    .team-scroll-heading {
+        font-size: 22px;
+        gap: 20px;
+    }
+
+    .heading-scroll-img1 {
+        width: 1rem;
+        margin-top: 0.5vh;
+    }
+
+    .team-heading-sections1 {
+        margin: 5rem 0rem 0rem;
+    }
+    .video1 {
+        width: 98%;
+    }
+}

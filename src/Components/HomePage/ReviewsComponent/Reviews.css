@@ -1,0 +1,234 @@
+@font-face {
+    font-family: Satoshi;
+    src: url(../../../../public/Satoshi-Regular.otf);
+}
+
+@font-face {
+    font-family: Satoshi-medium;
+    src: url(../../../../public/Satoshi-Medium.otf);
+}
+
+.reviews-section {
+    font-family: Satoshi-medium;
+    margin: 15rem 0rem 0rem 4rem;
+}
+
+.reviews-heading {
+    font-family: Satoshi-medium;
+    font-size: calc(1.75rem + 1.5vw);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.reviews-text-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.reviews-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38rem;
+    margin: 0 auto;
+}
+
+.reviews-para {
+    margin-bottom: 2rem;
+    background-color: transparent;
+    color: #33353A;
+    font-family: Satoshi;
+    font-size: calc(0.6rem + 0.75vw);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.24px;
+}
+
+.text-arrows-container {
+    display: flex;
+    flex-direction: column;
+    height: 32rem;
+    justify-content: space-between;
+}
+
+.reviewcard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    background-color: transparent;
+    margin: 3rem 1rem;
+}
+
+.review-cards {
+    border: none;
+    background: #E5E5E7;
+    width: 30rem;
+    height: 32rem;
+    border-radius: 25px;
+}
+
+.review-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.reviewcard-heading {
+    padding: 2rem 1rem 0rem 1rem;
+    background-color: transparent;
+}
+
+.reviewcard-description {
+    padding: 0rem 1rem;
+    vertical-align: bottom;
+    background-color: transparent;
+}
+
+.review-client {
+    color: #131A27;
+    font-size: calc(1.2rem + 0.75vw);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    font-family: Satoshi-medium;
+    background-color: transparent;
+}
+
+.review-place {
+    color: #33353A;
+    font-family: Satoshi;
+    font-size: calc(1.2rem + 0.6vw);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.24px;
+    background-color: transparent;
+}
+
+.reviews-carousel {
+    overflow: hidden;
+    scroll-behavior: smooth;
+    cursor: grab;
+}
+
+.carousel-reviews {
+    display: flex;
+}
+
+.reviews-arrows {
+    display: flex;
+    background-color: transparent;
+}
+
+.reviews-arrow {
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 1.2vh 1.4vh;
+    margin: 5px 10px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.disabled-icon1 {
+    color: rgba(140, 140, 140, 0.697);
+    border-color: rgba(140, 140, 140, 0.697);
+    cursor: default;
+    background-color: transparent;
+}
+
+.disabled-icon1:hover {
+    background-color: rgba(140, 140, 140, 0.697) !important;
+    color: white;
+    border-color: rgba(140, 140, 140, 0.697) !important;
+}
+
+.reviews-web-view {
+    margin: 0px;
+}
+
+@media (max-width: 1200px) {
+    .reviews-section {
+        margin: 120px 2rem;
+    }
+
+    .reviews-text {
+        width: 26rem;
+        padding-right: 0rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .reviews-section {
+        margin: 120px 1rem;
+    }
+
+    .reviews-web-view {
+        flex-direction: column;
+    }
+
+    .text-arrows-container {
+        display: block;
+        height: auto;
+    }
+
+    .reviews-text {
+        width: 100%;
+        display: block;
+    }
+
+    .review-cards {
+        margin-top: 2rem;
+    }
+    .reviews-para {
+        font-size: calc(1.2rem + 0.75vw);
+    }
+}
+
+@media (max-width: 545px) {
+    .review-cards {
+        width: 25rem;        
+        height: 23rem;
+    }
+    .reviews-para, .review-place {
+        font-size: calc(1rem + 0.5vw);
+    }
+}
+
+@media (max-width: 460px) {
+    .review-cards {
+        width: 20rem;
+    }
+
+    .reviewcard-container {
+        margin: 1rem;
+    }
+
+    .reviewcard-description {
+        padding: 0rem;
+    }
+
+    .reviewcard-heading {
+        padding: 0rem;
+    }
+
+    .reviews-section {
+        margin: 70px 0.5rem;
+    }
+}
+
+@media (max-width: 385px) {
+    .review-cards {
+        width: 16rem;
+    }
+}
+
+@media (max-width: 345px) {
+    .review-cards {
+        width: 14rem;
+    }
+}
