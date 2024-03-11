@@ -35,10 +35,6 @@ select {
   padding: 30px; /* Reduced padding for better spacing */
 }
 
-input.file {
-  width: 100%; /* Take full width */
-}
-
 .image-section {
   flex: 1;
   display: flex;
@@ -145,12 +141,6 @@ input::placeholder {
   line-height: 150%; /* 36px */
   letter-spacing: 0.24px; /* Placeholder color */
 }
-@media (max-width: 1140px) {
-  .image-section {
-    justify-content: center !important;
-    margin-top: 10%; /* Center image on smaller screens */
-  }
-}
 @media (max-width: 768px) {
   .container {
     flex-direction: column; /* Stack on smaller screens */
@@ -166,19 +156,42 @@ input::placeholder {
     max-height: 790px;
     justify-content: center !important;
   }
+  input,
+  select {
+    padding: 23px; /* Reduced padding for better spacing */
+  }
 
   .form-row {
     flex-direction: column;
     gap: 10px; /* Reduce gap between form inputs on smaller screens */
   }
+  .career-submit-btn {
+    padding: 20px 30px 20px 30px;
+    font-size: 20px;
+  }
 }
+
 @media (max-width: 568px) {
   img {
     max-width: 550px;
     max-height: 500px;
     justify-content: center;
   }
+  input::placeholder,
+  .file-input .placeholder,
+  .custom-select .placeholder {
+    font-size: 18px;
+  }
+  .career-submit-btn {
+    padding: 15px 15px 15px 15px;
+    font-size: 16px;
+  }
+  input,
+  select {
+    padding: 10px; /* Reduced padding for better spacing */
+  }
 }
+
 @media (max-width: 438px) {
   img {
     max-width: 400px !important;
