@@ -94,7 +94,7 @@ function Career() {
       </div>
       <div style={{ marginTop: "10%", margin: "2%" }}>
         <h4 className="bigText">What You’ll Get</h4>
-        <Row style={{ marginTop: "2%" }}>
+        <Row style={{ marginTop: "2%", padding: "20px" }}>
           <Col>
             <h6 className="normalText">Inspirational and Unique Environment</h6>
           </Col>
@@ -106,7 +106,7 @@ function Career() {
           </Col>
           <hr />
         </Row>
-        <Row>
+        <Row style={{ padding: "10px" }}>
           <Col>
             <h6 className="normalText">Professional Development</h6>
           </Col>
@@ -118,7 +118,7 @@ function Career() {
           </Col>
           <hr />
         </Row>
-        <Row>
+        <Row style={{ padding: "10px" }}>
           <Col>
             <h6 className="normalText">Friendly Team</h6>
           </Col>
@@ -131,7 +131,7 @@ function Career() {
           </Col>
           <hr />
         </Row>
-        <Row>
+        <Row style={{ padding: "10px" }}>
           <Col>
             <h6 className="normalText">Library with Tech Books</h6>
           </Col>
@@ -143,7 +143,7 @@ function Career() {
           </Col>
           <hr />
         </Row>
-        <Row>
+        <Row style={{ padding: "10px" }}>
           <Col>
             <h6 className="normalText">Training</h6>
           </Col>
@@ -155,7 +155,7 @@ function Career() {
           </Col>
           <hr />
         </Row>
-        <Row>
+        <Row style={{ padding: "10px" }}>
           <Col>
             <h6 className="normalText">Indoor/Outdoor Games</h6>
           </Col>
