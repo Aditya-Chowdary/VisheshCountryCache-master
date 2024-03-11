@@ -3,11 +3,9 @@
   justify-content: space-between !important;
   align-items: flex-end !important;
   flex-direction: row;
-  gap: 20px; /* Adding gap between form and image */
 }
 .form-heading {
   color: var(--text-icon-light-heading, #131a27);
-
   /* Headings/H6/Medium */
   font-family: Satoshi;
   font-size: 34px;

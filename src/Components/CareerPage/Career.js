@@ -24,9 +24,9 @@ function Career() {
     vertical: true, // Set to true for vertical scrolling
   };
   return (
-    <div>
+    <div >
       <div className="career_banner"></div>
-      <div style={{ marginTop: "5%", margin: "2%" }}>
+      <div style={{ marginTop: "10%", margin: "2%" }}>
         <Row>
           <Col>
             <p className="smallText" style={{ whiteSpace: "nowrap" }}>
@@ -53,7 +53,7 @@ function Career() {
           </Col>
           <Col>
             <Row>
-              <Col>
+              <Col style={{padding:'40px'}}>
                 <p className="smallText" style={{ textAlign: "center" }}>
                   <Image src={icon1} />
                   <br />
@@ -62,7 +62,7 @@ function Career() {
                   Excellence
                 </p>
               </Col>
-              <Col>
+              <Col style={{padding:'40px'}}>
                 <p className="smallText" style={{ textAlign: "center" }}>
                   <Image src={icon2} />
                   <br />
@@ -72,7 +72,7 @@ function Career() {
               </Col>
             </Row>
             <Row>
-              <Col>
+              <Col style={{padding:'40px'}}>
                 <p className="smallText" style={{ textAlign: "center" }}>
                   <Image src={icon3} />
                   <br />
@@ -80,7 +80,7 @@ function Career() {
                   Creativity
                 </p>
               </Col>
-              <Col>
+              <Col style={{padding:'40px'}}>
                 <p className="smallText" style={{ textAlign: "center" }}>
                   <Image src={icon4} />
                   <br />
@@ -92,7 +92,7 @@ function Career() {
           </Col>
         </Row>
       </div>
-      <div style={{ marginTop: "8%", margin: "2%" }}>
+      <div style={{ marginTop: "10%", margin: "2%" }}>
         <h4 className="bigText">What You’ll Get</h4>
         <Row style={{ marginTop: "2%" }}>
           <Col>
@@ -168,10 +168,10 @@ function Career() {
           <hr />
         </Row>
       </div>
-      <div>
+      <div style={{ marginTop: "10%"}}>
         <CareerAccordion />
       </div>
-      <div style={{ marginTop: "5%", marginLeft: "2%" }}>
+      <div style={{ marginTop: "8%", marginLeft: "2%",marginBottom:'10%' }}>
         <CareerForm />
       </div>
     </div>
