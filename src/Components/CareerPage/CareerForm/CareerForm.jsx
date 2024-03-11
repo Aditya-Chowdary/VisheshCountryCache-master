@@ -113,7 +113,9 @@ const CareerForm = () => {
             </div>
 
             <div className="form-row file-input">
-              <span className="placeholder">Choose a Resume</span>
+              <span className="placeholder">
+                Attach Resume and Cover Letter
+              </span>
               <input
                 type="file"
                 name="resume"
@@ -129,7 +131,7 @@ const CareerForm = () => {
         </Col>
 
         <Col className="image-section" sm={12}>
-          <img src={image} alt="Form Image" fluid />
+          <img src={image} alt="Form Image" />
         </Col>
       </Row>
     </Container>

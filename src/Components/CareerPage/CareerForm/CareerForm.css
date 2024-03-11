@@ -51,9 +51,11 @@ img {
   max-width: 600px;
   max-height: 990px;
 }
-.placeholder{
-  background-color: none;
+
+.placeholder {
+  background-color: transparent !important; /* Remove background color */
 }
+
 .career-submit-btn {
   display: inline-flex;
   padding: 24px 40px 26px 40px;
@@ -81,8 +83,6 @@ img {
   width: calc(100% - 2px); /* Adjusted width */
   border-bottom: 1px solid #33353a !important; /* Same border */
   padding: 30px; /* Same padding */
-  background-color: transparent;
-  color: var(--text-icon-dark-heading); /* Text color */
 }
 
 .custom-select .placeholder {
@@ -91,7 +91,13 @@ img {
   transform: translateY(-50%);
   left: 10px; /* Adjusted position */
   pointer-events: none;
-  color: var(--text-icon-light-heading); /* Placeholder color */
+  color: var(--Grey-400, #98a2b3);
+  font-family: Satoshi;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 36px */
+  letter-spacing: 0.24px; /* Placeholder color */
 }
 
 /* Adjustments for file input */
@@ -101,7 +107,6 @@ img {
   border-bottom: 1px solid #33353a !important; /* Same border */
   padding: 30px; /* Same padding */
 }
-
 .file-input .file {
   position: absolute;
   width: 100%;
@@ -109,22 +114,36 @@ img {
   opacity: 0;
   cursor: pointer;
 }
-
 .file-input .placeholder {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 10px; /* Adjusted position */
   pointer-events: none;
-  color: var(--text-icon-light-heading); /* Placeholder color */
+  color: var(--Grey-400, #98a2b3);
+  font-family: Satoshi;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 36px */
+  letter-spacing: 0.24px; /* Placeholder color */
 }
-
 .file-input .file-icon {
   position: absolute;
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--text-icon-dark-heading); /* Icon color */
+}
+
+/* Styles for the placeholder of all input fields */
+input::placeholder {
+  color: var(--Grey-400, #98a2b3);
+  font-family: Satoshi;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 36px */
+  letter-spacing: 0.24px; /* Placeholder color */
 }
 @media (max-width: 1140px) {
   .image-section {
