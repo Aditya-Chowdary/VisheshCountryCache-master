@@ -33,7 +33,7 @@ const CareerForm = () => {
   return (
     <Container fluid>
       <Row className="justify-content-center align-items-center container-section">
-        <Col className="signInForm">
+        <Col >
           <h6 className="form-heading">Fill up the form</h6>
           <form onSubmit={handleSubmit}>
             <div className="form-row">
@@ -133,7 +133,7 @@ const CareerForm = () => {
           </form>
         </Col>
 
-        <Col className="image-section" sm={12}>
+        <Col className="image-section" sm={12} >
           <img src={image} alt="Form Image" />
         </Col>
       </Row>

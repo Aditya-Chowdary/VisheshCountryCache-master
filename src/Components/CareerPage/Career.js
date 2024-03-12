@@ -20,15 +20,16 @@ function Career() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    pauseOnHover: true,
+   
     vertical: true, // Set to true for vertical scrolling
   };
+
   return (
     <div>
       <div className="career_banner"></div>
-      <div style={{ marginTop: "10%", margin: "2%" }}>
+      <div className="div-margins">
         <Row>
-          <Col>
+          <Col md={6}>
             <p className="smallText">
               A great place to{" "}
               <Slider {...settings} className="slider_style">
@@ -51,9 +52,9 @@ function Career() {
               together.
             </h5>
           </Col>
-          <Col>
+          <Col md={6}>
             <Row>
-              <Col style={{ padding: "40px" }}>
+              <Col xs={6} md={6}>
                 <p className="smallText" style={{ textAlign: "center" }}>
                   <Image src={icon1} />
                   <br />
@@ -62,7 +63,7 @@ function Career() {
                   Excellence
                 </p>
               </Col>
-              <Col style={{ padding: "40px" }}>
+              <Col xs={6} md={6}>
                 <p className="smallText" style={{ textAlign: "center" }}>
                   <Image src={icon2} />
                   <br />
@@ -71,8 +72,8 @@ function Career() {
                 </p>
               </Col>
             </Row>
-            <Row>
-              <Col style={{ padding: "40px" }}>
+            <Row style={{ paddingTop: "5vw" }}>
+              <Col xs={6} md={6}>
                 <p className="smallText" style={{ textAlign: "center" }}>
                   <Image src={icon3} />
                   <br />
@@ -80,7 +81,7 @@ function Career() {
                   Creativity
                 </p>
               </Col>
-              <Col style={{ padding: "40px" }}>
+              <Col xs={6} md={6}>
                 <p className="smallText" style={{ textAlign: "center" }}>
                   <Image src={icon4} />
                   <br />
@@ -92,9 +93,9 @@ function Career() {
           </Col>
         </Row>
       </div>
-      <div style={{ marginTop: "10%", margin: "2%" }}>
+      <div className="div-margins">
         <h4 className="bigText">What You’ll Get</h4>
-        <Row style={{ marginTop: "2%", padding: "20px" }}>
+        <Row style={{ marginTop: "2%", padding: "10px" }}>
           <Col>
             <h6 className="normalText">Inspirational and Unique Environment</h6>
           </Col>

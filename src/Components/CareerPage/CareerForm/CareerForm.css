@@ -59,7 +59,7 @@ img {
   border-radius: 14px;
   background: var(--Grey-900, #101828);
   color: var(--text-icon-dark-heading, #fcfcfc);
-
+margin-top: 8%;
   /* ButtonText/Large */
   font-family: Satoshi;
   font-size: 26px;
@@ -99,7 +99,7 @@ img {
   position: relative;
   width: calc(100% - 2px); /* Adjusted width */
   border-bottom: 1px solid #33353a !important; /* Same border */
-  padding: 30px; /* Same padding */
+  padding: 45px; /* Same padding */
 }
 .file-input .file {
   position: absolute;
@@ -146,17 +146,12 @@ input::placeholder {
   }
 
   .image-section {
-    justify-content: center !important;
-    margin-top: 10%; /* Center image on smaller screens */
+    display: none;
   }
-  img {
-    max-width: 550px;
-    max-height: 790px;
-    justify-content: center !important;
-  }
+
   input,
   select {
-    padding: 23px; /* Reduced padding for better spacing */
+    padding: 23px !important; /* Reduced padding for better spacing */
   }
 
   .form-row {
@@ -170,11 +165,7 @@ input::placeholder {
 }
 
 @media (max-width: 568px) {
-  img {
-    max-width: 550px;
-    max-height: 500px;
-    justify-content: center;
-  }
+ 
   input::placeholder,
   .file-input .placeholder,
   .custom-select .placeholder {
@@ -190,10 +181,4 @@ input::placeholder {
   }
 }
 
-@media (max-width: 438px) {
-  img {
-    max-width: 400px !important;
-    max-height: 450px !important;
-    justify-content: center;
-  }
-}
+

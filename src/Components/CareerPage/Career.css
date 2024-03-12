@@ -6,7 +6,10 @@
   font-family: Satoshi-med;
   src: url(../../../public/Satoshi-Medium.otf);
 }
-
+.div-margins{
+margin-top: 10% !important;
+margin: 2%;
+}
 .career_banner {
   max-width: 1792px !important;
   height: 860px !important;
@@ -30,7 +33,7 @@
   color: var(--text-icon-light-body, #33353a);
 
   /* Headings/H5/Medium */
-  font-family: Satoshi;
+  font-family: Satoshi-med;
   font-size: 48px;
   font-style: normal;
   font-weight: 500;

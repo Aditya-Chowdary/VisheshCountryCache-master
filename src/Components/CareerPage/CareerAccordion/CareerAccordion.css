@@ -2,7 +2,6 @@
   padding: 0;
   border-bottom: 1px solid var(--Grey-400, #98a2b3);
   background: var(--BgColors-Three, #f7f5f2);
-
 }
 
 .accordion {
@@ -18,14 +17,15 @@
   font-style: normal;
   font-weight: 500;
   line-height: 140%; /* 47.6px */
-  padding: 30px;
-  background: var(--BgColors-Three, #F7F5F2);
+  height: 10vh;
+  background: var(--BgColors-Three, #f7f5f2);
 }
 
 .accordion-heading {
   color: var(--Base-Black, #000);
-  background: var(--BgColors-Three, #F7F5F2);
+  background: var(--BgColors-Three, #f7f5f2);
   /* Body/Text/Medium */
+
   font-family: Satoshi-med;
   font-size: 24px;
   font-style: normal;
