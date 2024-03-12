@@ -45,11 +45,33 @@
   letter-spacing: 0.2px;
   max-width: 1609px;
 }
+/* CareerAccordion.css */
 
+/* Override Bootstrap's default active color */
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: #000; /* Change this to your desired text color */
+}
+
+/* Override Bootstrap's default focus color */
+.accordion-button:not(.collapsed):focus {
+  box-shadow: none;
+}
+/* Override Bootstrap's default focus color for collapsed accordion items */
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+/* Override Bootstrap's default hover color */
+.accordion-button:not(.collapsed):hover {
+  background-color: transparent;
+}
 /* Responsive Text Size */
 @media (max-width: 768px) {
   .accordion-button {
     font-size: 28px;
+  }
+  .accord-heading {
+    font-size: 10px !important;
   }
 
   .accordion-heading {
