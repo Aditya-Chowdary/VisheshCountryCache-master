@@ -92,7 +92,7 @@ select {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 30px; /* Adjusted position */
+  left: 20px; /* Adjusted position */
   pointer-events: none;
 }
 
@@ -107,7 +107,7 @@ select {
   position: absolute;
   height: 100%;
   opacity: 0;
-  cursor: pointer;
+  cursor: pointer; width: 100%;
 }
 
 .file-input .file-icon {
@@ -119,9 +119,9 @@ select {
 
 /* Styles for the placeholder of all input fields */
 input::placeholder,
-select::placeholder,
+.custom-select .placeholder,
 .file-input .placeholder {
-  color: var(--Grey-400, #98a2b3);
+  color: var(--Grey-400, #98a2b3) !important;
   font-family: Satoshi;
   font-size: 24px;
   font-style: normal;
@@ -130,17 +130,7 @@ select::placeholder,
   letter-spacing: 0.24px; /* Placeholder color */
 }
 
-/* Adjustments for select input placeholder */
-.custom-select .placeholder,
-.file-input .placeholder {
-  color: var(--Grey-400, #98a2b3);
-  font-family: Satoshi;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 36px */
-  letter-spacing: 0.24px; /* Placeholder color */
-}
+
 @media (max-width: 1128px){
   input,
   select {
