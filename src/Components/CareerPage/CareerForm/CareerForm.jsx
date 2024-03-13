@@ -102,7 +102,7 @@ const CareerForm = () => {
             </div>
 
             <div className="custom-select form-row">
-              <span className="placeholder">Applying For</span>
+              <span className="select-placeholder">Applying For</span>
               <select
                 name="applyingFor"
                 value={formData.applyingFor}
@@ -114,7 +114,7 @@ const CareerForm = () => {
             </div>
 
             <div className="form-row file-input">
-              <span className="placeholder">
+              <span className="file-placeholder">
                 Attach Resume and Cover Letter
               </span>
               <input
