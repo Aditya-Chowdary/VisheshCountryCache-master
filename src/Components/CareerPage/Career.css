@@ -29,6 +29,7 @@ margin: 2%;
   line-height: 150%; /* 36px */
   letter-spacing: 0.24px;
 }
+
 .mediumText {
   color: var(--text-icon-light-body, #33353a);
 
@@ -64,6 +65,9 @@ margin: 2%;
 .slick-prev:before {
   content: none !important;
 }
+.slick-next:before {
+  content: none !important;
+}
 .slider_style {
   display: inline-block !important;
   vertical-align: middle !important;
@@ -87,6 +91,16 @@ margin: 2%;
   .accordion-button {
     font-size: large;
   }
-  .slider_styles {
+  .row{
+    margin-right: 0;
+  }
+  .icons{
+    width: 4em !important;
+    margin: 1em;
+  }.slick-prev:before {
+    content: none !important;
+  }
+  .slick-next:before {
+    content: none !important;
   }
 }

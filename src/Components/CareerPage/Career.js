@@ -56,7 +56,7 @@ function Career() {
             <Row>
               <Col xs={6} md={6}>
                 <p className="smallText" style={{ textAlign: "center" }}>
-                  <Image src={icon1} />
+                  <Image src={icon1} className="icons"/>
                   <br />
                   Collaborative
                   <br />
@@ -65,7 +65,7 @@ function Career() {
               </Col>
               <Col xs={6} md={6}>
                 <p className="smallText" style={{ textAlign: "center" }}>
-                  <Image src={icon2} />
+                  <Image src={icon2}  className="icons"/>
                   <br />
                   Continuous Growth <br />
                   and Learning
@@ -75,7 +75,7 @@ function Career() {
             <Row style={{ paddingTop: "5vw" }}>
               <Col xs={6} md={6}>
                 <p className="smallText" style={{ textAlign: "center" }}>
-                  <Image src={icon3} />
+                  <Image src={icon3}  className="icons"/>
                   <br />
                   Innovation and <br />
                   Creativity
@@ -83,7 +83,7 @@ function Career() {
               </Col>
               <Col xs={6} md={6}>
                 <p className="smallText" style={{ textAlign: "center" }}>
-                  <Image src={icon4} />
+                  <Image src={icon4}  className="icons"/>
                   <br />
                   Diversity and <br />
                   Inclusion

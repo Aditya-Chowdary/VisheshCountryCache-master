@@ -19,21 +19,34 @@ const CareerForm = () => {
     coverLetter: "",
   });
 
+  const [selectedFileName, setSelectedFileName] = useState(""); // State to store the selected file name
+
   const handleChange = (e) => {
+    const { name, value, files } = e.target;
+
+    if (name === "resume" && files.length > 0) {
+      // If the input is a file input and a file is selected
+      setFormData({ ...formData, [name]: files[0] }); // Update the form data with the selected file
+      setSelectedFileName(files[0].name); // Set the selected file name
+    } else {
+      setFormData({ ...formData, [name]: value }); // Update the form data for other inputs
+    }
+  };
+
+  const handleSelectChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
     console.log(formData);
   };
 
   return (
     <Container fluid>
       <Row className="justify-content-center align-items-center">
-        <Col >
+        <Col>
           <h6 className="form-heading">Fill up the form</h6>
           <form onSubmit={handleSubmit}>
             <div className="form-row">
@@ -102,20 +115,32 @@ const CareerForm = () => {
             </div>
 
             <div className="custom-select form-row">
-              <span className="select-placeholder">Applying For</span>
+              {/* Remove placeholder from select when an option is selected */}
+              <span className="select-placeholder">
+                {formData.applyingFor ? formData.applyingFor : "Applying For"}
+              </span>
               <select
                 name="applyingFor"
                 value={formData.applyingFor}
-                onChange={handleChange}
+                onChange={handleSelectChange}
               >
-                <option value="" disabled hidden></option>
-                {/* Other options */}
+                <option value="Graphic Designer">Graphic Designer</option>
+                <option value="UI/UX Designer">UI/UX Designer</option>
+                <option value="Fullstack Development">
+                  Fullstack Development
+                </option>
               </select>
             </div>
 
             <div className="form-row file-input">
+              {/* Remove placeholder from file input and select when a value is selected */}
               <span className="file-placeholder">
-                Attach Resume and Cover Letter
+                {selectedFileName
+                  ? selectedFileName
+                  : "Attach Resume and Cover Letter"}
+              </span>
+              <span className="file-icon">
+                <img src={attachIcon} alt="Attachment Icon" />
               </span>
               <input
                 type="file"
@@ -123,9 +148,6 @@ const CareerForm = () => {
                 className="file"
                 onChange={handleChange}
               />
-              <span className="file-icon">
-                <img src={attachIcon} />
-              </span>
             </div>
             <button type="submit" className="career-submit-btn">
               Submit
@@ -134,7 +156,7 @@ const CareerForm = () => {
         </Col>
 
         <Col className="image-section">
-          <img src={image} alt="Form Image" className="form-image" />
+          <img src={image} alt="Form" className="form-image" />
         </Col>
       </Row>
     </Container>
